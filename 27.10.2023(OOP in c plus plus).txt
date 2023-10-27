@@ -1,0 +1,59 @@
+// 27.10.2023 (2nd lesson).cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+using namespace std;
+#include <iostream>
+#include "Base.h"
+#include "bank.h"
+
+int main()
+{
+   cout << "Hello World!" << endl;
+   cout << "lesson 2 try OOP and git with commands" << endl;
+ 
+   // introduce to OOP(class, private, public, constructors, first pryncyp of OOP)
+   //Base base;
+   ////Base* base = new Base();
+   //base.setAge(11);
+   //base.setName("namne");
+   //cout << endl << base.getAge() << endl << base.getName() << endl;
+
+   //Base c;
+   //c.setAge(20);
+   //c.setName("c name");
+   //cout <<endl << c.getAge() << endl << c.getName();
+
+   //Base constructorTypeByDefault;
+   //cout <<endl << endl << constructorTypeByDefault.getAge() << endl << constructorTypeByDefault.getName() << endl;
+
+   //Base constructorTypeInnitalizingSetting("Name", 20);
+   //cout << endl << constructorTypeInnitalizingSetting.getAge() << endl << constructorTypeInnitalizingSetting.getName();
+   //
+   //Base firstPryncypOfOOP;
+   //cout << endl << firstPryncypOfOOP.getWeight() << endl;
+   
+	
+
+ 
+	   string choice;
+	   cout << endl << "Chose choice: 1 - set new client, 2-  set balance to zero" << endl;
+	   cin >> choice;
+	   if (choice == "1") {
+		   string clientName;
+		   int clientBalance;
+		   int clientBill;
+		   cout << endl << "Type your name";
+		   cin >> clientName;
+		   cout << endl << "Type your balance";
+		   cin >> clientBalance;
+		   cout << endl << "Type your bill";
+		   cin >> clientBill;
+		   Client client(clientName, clientBalance, clientBill);   
+	   }
+	   else if (choice == "2") {
+		   
+	   }
+   
+}
+
+

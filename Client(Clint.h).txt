@@ -1,0 +1,29 @@
+#pragma once
+#include <iostream>
+using namespace std;
+class Client
+{
+private:
+	string name;
+	int balance;
+	int bill;
+public:
+	Client() {
+
+	}
+	Client(string name_, int balance_, int bill_) {
+		this->name = name_;
+		this->balance = balance_;
+		this->bill = bill_;
+
+	}
+	void setBalanceToZero() {
+		this->balance = 0;
+	}
+	void deleteClient() {
+		this->name = "";
+		this->balance = 0;
+		this->bill = 0;
+	}
+};
+

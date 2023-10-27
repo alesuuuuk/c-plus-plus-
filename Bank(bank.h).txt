@@ -1,0 +1,24 @@
+#pragma once
+#include <iostream>
+#include "Client.h"
+using namespace std;
+class Bank
+{
+private:
+	string bank_name;
+	Client client;
+	int bank_balance;
+
+public:
+	Bank(string name, int balance, int bill) {
+		client = Client(name, balance, bill);
+	}
+	void clearClientBalance() {
+		client.setBalanceToZero();
+	}
+	void deleteClient() {
+		client.deleteClient();
+	}
+
+	
+};

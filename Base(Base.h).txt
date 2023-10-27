@@ -1,0 +1,39 @@
+#pragma once
+#include <iostream>
+using namespace std;
+class Base
+{
+private:
+	string name;
+	int age;
+	int weight;
+	int weightToKg(int weight) {
+		// розрахунки якісь але я там вкажу що умовно вже є 
+		return weight;
+	}
+public:
+	Base() {
+		name = "noName";
+		age = 0;
+	}
+	Base(string name, int age) {
+		this->name = name;
+		this->age = age;
+	}
+	string getName() {
+		return this->name;
+	}
+	int getWeight() {
+		return this->weightToKg(15);
+	}
+	void setName(string n) {
+		this->name = n;
+	}
+	int getAge() {
+		return this->age;
+	}
+	void setAge(int age_) {
+		this->age = age_;
+	}
+};
+
